@@ -75,30 +75,43 @@
         // console.log("The condition \"You're an awesome student\" is triggered");
 
         //Task 11
-        var myMarks = [30,45,68,32,45];
-        var criteria = 30; 
-        var bonusPoints = 5;
+        // var myMarks = [30,45,68,32,45];
+        // var criteria = 30; 
+        // var bonusPoints = 5;
 
-        for (i = 0; i<myMarks.length; i++){
-            myMarks[i]=myMarks[i]+bonusPoints;
-        }
+        // for (i = 0; i<myMarks.length; i++){
+        //     myMarks[i]=myMarks[i]+bonusPoints;
+        // }
 
-        var pass;
-        for (i = 0; i<myMarks.length; i++){
-            if(myMarks[i]<criteria){
-                pass=false;
-                break;
-            } else {
-                pass=true;
-            }
-        }
+        // var pass;
+        // for (i = 0; i<myMarks.length; i++){
+        //     if(myMarks[i]<criteria){
+        //         pass=false;
+        //         break;
+        //     } else {
+        //         pass=true;
+        //     }
+        // }
         
-        if(pass){
-            console.log("Passed!")
-        } else {
-            console.log("Failed!")
-        }
+        // if(pass){
+        //     console.log("Passed!")
+        // } else {
+        //     console.log("Failed!")
+        // }
 
+        //Task 12
+        var array=[1,2,3,4,5];
+        console.log(array.splice(2));
+        // [3, 4, 5]
+        console.log(array);
+        //[1, 2]
+        var array2=[6,7,8,9,0];
+        console.log(array2.splice(2,1));
+        //[8]
+        console.log(array2.splice(2,0));
+        //[]
+        console.log(array2);
+        //[6, 7, 9, 0]
     </script>
 </body>
 </html>
