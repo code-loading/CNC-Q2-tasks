@@ -61,19 +61,43 @@
         // console.log("The condition \"You are not allowed to spend this much money\" is triggered")
 
         //Task 10
-        var SAT = 200;
-        var avg = 150;
-        var GPA = 3;
-        var sport = "snooker"
+        // var SAT = 200;
+        // var avg = 150;
+        // var GPA = 3;
+        // var sport = "snooker"
 
-        if (SAT > avg || GPA > 2.5 || sport === "football") {
-            console.log("You're an awesome student");
-        }
-        else {
-            console.log("You are not eligible");
-        }
-        console.log("The condition \"You're an awesome student\" is triggered");
+        // if (SAT > avg || GPA > 2.5 || sport === "football") {
+        //     console.log("You're an awesome student");
+        // }
+        // else {
+        //     console.log("You are not eligible");
+        // }
+        // console.log("The condition \"You're an awesome student\" is triggered");
 
+        //Task 11
+        var myMarks = [30,45,68,32,45];
+        var criteria = 30; 
+        var bonusPoints = 5;
+
+        for (i = 0; i<myMarks.length; i++){
+            myMarks[i]=myMarks[i]+bonusPoints;
+        }
+
+        var pass;
+        for (i = 0; i<myMarks.length; i++){
+            if(myMarks[i]<criteria){
+                pass=false;
+                break;
+            } else {
+                pass=true;
+            }
+        }
+        
+        if(pass){
+            console.log("Passed!")
+        } else {
+            console.log("Failed!")
+        }
 
     </script>
 </body>
