@@ -94,19 +94,39 @@
         // console.log(capitalizeFirstLetter(test));
         
         //Task 8
-        var test = "this is a test sentence";
+        // var test = "this is a test sentence";
         
-        function capitalizeFirstLetterOfEachWord(string) {
-            var str = string.split(" ");
-            for (i = 0; i < str.length; i++){
-            str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+        // function capitalizeFirstLetterOfEachWord(string) {
+        //     var str = string.split(" ");
+        //     for (i = 0; i < str.length; i++){
+        //     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+        // }
+
+        //     return str.join(' ');
+        //     }
+
+        // console.log(capitalizeFirstLetterOfEachWord(test));        
+
+        //Task 9
+        var sentence = "The Quick Brown fox jumps over the lazy dog";
+        var occurWord = "the";
+        
+        function wordCounterInString(str1, str2){
+            str1 = str1.toLowerCase();
+            str2 = str2.toLowerCase();
+            var sub = str1.split(" ");
+            var j = 0;
+            for (i = 0; i < str1.length; i++){
+                if(sub[i]==str2){
+                  j++;
+                }
+            }
+            
+            return j;
         }
 
-            return str.join(' ');
-            }
-
-        console.log(capitalizeFirstLetterOfEachWord(test));        
-
+        //console.log("final answer",wordCounterInString(sentence,occurWord)) ; // 2
+        console.log(wordCounterInString(sentence,occurWord));
     </script>
 </body>
 </html>
