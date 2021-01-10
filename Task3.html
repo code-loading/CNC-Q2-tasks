@@ -57,17 +57,29 @@
     // console.log(deleteLastArrayElement(test));
 
     //Task 9
-    function typeChecker(myvar){
-        console.log(typeof(myvar));
+    // function typeChecker(myvar){
+    //     console.log(typeof(myvar));
+    // }
+
+    // var str = "hello";
+    // var num = 5;
+    // var arr = ["cat", "dog"];
+
+    // typeChecker(str);
+    // typeChecker(num);
+    // typeChecker(arr);
+
+    //Task 10
+    function arrayDoubler(array){
+        for(i = 0; i < array.length; i++){
+            array[i] = array[i] * 2;
+        }
+        return array;
     }
 
-    var str = "hello";
-    var num = 5;
-    var arr = ["cat", "dog"];
+    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    typeChecker(str);
-    typeChecker(num);
-    typeChecker(arr);
+    console.log(arrayDoubler(numbers));
 </script>
 </body>
 </html>
