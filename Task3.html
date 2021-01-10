@@ -98,11 +98,43 @@
     // charCounterInString("hello world");
 
     //Task 13
-    stringToUpperCase = (String) => {
-        console.log(String.toUpperCase());
+    // stringToUpperCase = (String) => {
+    //     console.log(String.toUpperCase());
+    // }
+
+    // stringToUpperCase("hello world");
+
+    //Task 14
+
+    // Apparently there's a much easier way
+    // numberArraySorter = (Array) => {
+    //     var a;
+    //     for (i = 0; i < Array.length; i++){
+    //         if (Array[i]>Array[i+1]){
+    //             Array[i] = a;
+    //             Array[i+1]
+    //         }
+    //     }
+    // }
+
+    var test = [5, 3, 9, 1, 23, 8, 4];
+
+    // Takes 2 arguments, first is array, second takes 1 for ascending or 0 for descending
+    numArrayAscendingDescending = (Array, Boolean) => {
+        // Ascending order
+        if (Boolean == 1){
+            Array.sort((a,b) => {return a-b;})
+            return Array;
+        } else if (Boolean == 0) {
+            //Descending order
+            Array.sort((a,b) => {return b-a;})
+            return Array;
+        } else {
+            console.log("Please specify 1 for ascending or 0 for descending for the second argument")
+        }
     }
 
-    stringToUpperCase("hello world");
+    console.log(numArrayAscendingDescending(test,0));
 </script>
 </body>
 </html>
