@@ -48,13 +48,26 @@
     //1. myfunction() { } is also not valid
 
     //Task 8
-    function deleteLastArrayElement(array){
-        array.pop();
-        return array;
-    }
+    // function deleteLastArrayElement(array){
+    //     array.pop();
+    //     return array;
+    // }
     
-    var test = ["hello", "world", "this", "is", "Sam"];
-    console.log(deleteLastArrayElement(test));
+    // var test = ["hello", "world", "this", "is", "Sam"];
+    // console.log(deleteLastArrayElement(test));
+
+    //Task 9
+    function typeChecker(myvar){
+        console.log(typeof(myvar));
+    }
+
+    var str = "hello";
+    var num = 5;
+    var arr = ["cat", "dog"];
+
+    typeChecker(str);
+    typeChecker(num);
+    typeChecker(arr);
 </script>
 </body>
 </html>
