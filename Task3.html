@@ -137,18 +137,23 @@
     // console.log(numArrayAscendingDescending(test,0));
 
     //Task 15
-    stringOrNumber = (str_num) => {
-        if (typeof(str_num)=="string"){
-            return str_num=str_num+" Welcome";
-        } else if (typeof(str_num)=="number"){
-            return str_num*=str_num;
-        }
+    // stringOrNumber = (str_num) => {
+    //     if (typeof(str_num)=="string"){
+    //         return str_num=str_num+" Welcome";
+    //     } else if (typeof(str_num)=="number"){
+    //         return str_num*=str_num;
+    //     }
+    // }
+
+    // console.log(stringOrNumber("hello"));
+    // console.log(stringOrNumber(5));
+    
+    //Task 16
+    roundNumber = (number) => {
+        return Math.round(number);
     }
 
-    console.log(stringOrNumber("hello"));
-    console.log(stringOrNumber(5));
-    
-
+    console.log(roundNumber(4.6));
 
 </script>
 </body>
