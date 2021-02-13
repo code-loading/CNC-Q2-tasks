@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var str = ["HEllo World","It's ME"];
+        // console.log(str[0].toLowerCase());
+        // console.log(str[1].toLowerCase());
+        // console.log(str);
+
+        var cities = [];
+        var n = 5;
+        for(i=0;i<n;i++){
+            var m = n-i;
+            if(m!=1){
+                cities[i]=prompt("Enter "+m+" city names:");
+            } else{
+                cities[i]=prompt("Enter "+m+" city name:");
+            }
+                        
+        }
+
+        
+        for(i=0;i<n;i++){
+            // var str = cities[i];
+            // cities[i]=str.toLowerCase();
+            cities[i] = cities[i].toLowerCase();
+        }
+        
+        var citySlice = cities.slice(1,6);
+        var firstCity = citySlice[0];
+        console.log(firstCity.charAt(1).toUpperCase());
+        console.log(firstCity);
+        
+
+
+    </script>
+</body>
+</html>
