@@ -37,11 +37,19 @@
         // console.log(firstCity.charAt(1).toUpperCase());
         // console.log(firstCity);
         
-        //Problem 2
-        var str = "Finding yourself in a busy life style so difficult that sometime you die not even knowing yourself and your purpose of life";
-        var str2 = str.replace(/yourself/gi, "ourselves");
-        var str3 = str2.replace(/you /gi, "we ");
-        console.log(str3);
+        // //Problem 2
+        // var str = "Finding yourself in a busy life style so difficult that sometime you die not even knowing yourself and your purpose of life";
+        // var str2 = str.replace(/yourself/gi, "ourselves");
+        // var str3 = str2.replace(/you /gi, "we ");
+        // console.log(str3);
+
+        //Problem 3
+        var salary = Number(prompt("Enter your salary: "));
+        salary += Math.random();
+        salary = salary-salary/2;
+        
+        console.log(Math.floor(salary)," floor value");
+        console.log(Math.ceil(salary)," ceil value");
     </script>
 </body>
 </html>
