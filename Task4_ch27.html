@@ -7,38 +7,41 @@
 </head>
 <body>
     <script>
-
+        //Problem 1
         // var str = ["HEllo World","It's ME"];
         // console.log(str[0].toLowerCase());
         // console.log(str[1].toLowerCase());
         // console.log(str);
 
-        var cities = [];
-        var n = 5;
-        for(i=0;i<n;i++){
-            var m = n-i;
-            if(m!=1){
-                cities[i]=prompt("Enter "+m+" city names:");
-            } else{
-                cities[i]=prompt("Enter "+m+" city name:");
-            }
+        // var cities = [];
+        // var n = 5;
+        // for(i=0;i<n;i++){
+        //     var m = n-i;
+        //     if(m!=1){
+        //         cities[i]=prompt("Enter "+m+" city names:");
+        //     } else{
+        //         cities[i]=prompt("Enter "+m+" city name:");
+        //     }
                         
-        }
+        // }
 
         
-        for(i=0;i<n;i++){
-            // var str = cities[i];
-            // cities[i]=str.toLowerCase();
-            cities[i] = cities[i].toLowerCase();
-        }
+        // for(i=0;i<n;i++){
+        //     // var str = cities[i];
+        //     // cities[i]=str.toLowerCase();
+        //     cities[i] = cities[i].toLowerCase();
+        // }
         
-        var citySlice = cities.slice(1,6);
-        var firstCity = citySlice[0];
-        console.log(firstCity.charAt(1).toUpperCase());
-        console.log(firstCity);
+        // var citySlice = cities.slice(1,6);
+        // var firstCity = citySlice[0];
+        // console.log(firstCity.charAt(1).toUpperCase());
+        // console.log(firstCity);
         
-
-
+        //Problem 2
+        var str = "Finding yourself in a busy life style so difficult that sometime you die not even knowing yourself and your purpose of life";
+        var str2 = str.replace(/yourself/gi, "ourselves");
+        var str3 = str2.replace(/you /gi, "we ");
+        console.log(str3);
     </script>
 </body>
 </html>
